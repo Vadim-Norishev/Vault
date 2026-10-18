@@ -1,0 +1,30 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink:    #1a1814;
+  --ink2:   #3d3a34;
+  --ink3:   #7a7670;
+  --paper:  #f5f2ec;
+  --paper2: #edeae3;
+  --paper3: #e4e0d8;
+  --accent: #c0392b;
+  --accent2:#e74c3c;
+  --gold:   #b8860b;
+  --r:      8px;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Geist', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--paper2); }
+::-webkit-scrollbar-thumb { background: var(--paper3); border-radius: 3px; }
+
+button { cursor: pointer; font-family: inherit; }
+input, select, textarea { font-family: inherit; }
